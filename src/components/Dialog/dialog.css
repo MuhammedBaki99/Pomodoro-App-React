@@ -94,6 +94,11 @@ dialog {
       border-radius: 20px;
       background: rgba(239, 241, 250, 1);
     }
+
+    button:hover {
+      outline: 1px solid rgba(239, 241, 250, 1);
+      outline-offset: 5px;
+    }
   }
 }
 
@@ -105,6 +110,10 @@ dialog {
   .colorchoices {
     display: flex;
     gap: 16px;
+
+    div {
+      cursor: pointer;
+    }
   }
 
   .red {
@@ -114,6 +123,11 @@ dialog {
     background: rgba(248, 112, 112, 1);
   }
 
+  .red:hover {
+    outline: 1px solid rgba(239, 241, 250, 1);
+    outline-offset: 5px;
+  }
+
   .lightblue {
     width: 40px;
     height: 40px;
@@ -121,11 +135,21 @@ dialog {
     background: rgba(112, 243, 248, 1);
   }
 
+  .lightblue:hover {
+    outline: 1px solid rgba(239, 241, 250, 1);
+    outline-offset: 5px;
+  }
+
   .purple {
     width: 40px;
     height: 40px;
     border-radius: 20px;
     background: rgba(216, 129, 248, 1);
+  }
+
+  .purple:hover {
+    outline: 1px solid rgba(239, 241, 250, 1);
+    outline-offset: 5px;
   }
 }
 
@@ -137,6 +161,15 @@ dialog {
   position: absolute;
   bottom: calc(0% + 10px);
   left: calc(50% - 70px);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.84px;
+  text-align: center;
+  color: white;
+}
+
+.apply:hover {
+  background: #f98d8d;
 }
 
 hr {
