@@ -32,8 +32,7 @@
     color: rgba(215, 224, 255, 1);
   }
 
-  button:nth-child(1) {
-    background: rgba(248, 112, 112, 1);
+  button:nth-child(1) { 
     color: rgba(30, 33, 63, 1);
   }
 }
@@ -66,7 +65,7 @@
       height: 350px;
       border-radius: 175px;
       background: rgba(22, 25, 50, 1);
-      text-align: center; 
+      text-align: center;
       padding-top: 100px;
 
       h1 {
@@ -90,17 +89,5 @@
 
       }
     }
-  }
-}
-
-@keyframes timer {
-  0% {
-    background: rgba(248, 112, 112, 1);
-    background-size: 100%;
-  }
-
-  100% {
-    background: transparent;
-    background-size: 0%;
   }
 }

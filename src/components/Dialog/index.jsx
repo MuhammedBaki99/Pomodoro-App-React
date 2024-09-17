@@ -1,8 +1,10 @@
+import React from "react";
 import { useContext, useRef } from "react";
+import { FontContext } from "../../App";
 import "./dialog.css"
 
 export default function Dialog() {
-  const {font, setFont} = useContext(FontContext);
+  const {setFont, setTheme} = useContext(FontContext);
   const dialogRef = useRef({});
 
   function handleClick() {
@@ -57,10 +59,10 @@ export default function Dialog() {
             <hr />
             <div className="font">
               <h2>FONT</h2>
-              <div className="fontcheck">
-                <button onClick={() => setFont("Khumb Sans")}>Aa</button>
-                <button onClick={() => setFont("Roboto")}>Aa</button>
-                <button onClick={() => setFont("Space Mono")}>Aa</button>
+              <div className="fontcheck"> 
+                  <input type="radio" name="font" id="" /> 
+                  <input type="radio" name="font" id="" /> 
+                  <input type="radio" name="font" id="" />  
               </div>
             </div>
             <hr />
@@ -69,9 +71,9 @@ export default function Dialog() {
             <div className="color">
               <h2>COLOR</h2>
               <div className="colorchoices">
-                <div className="red"></div>
-                <div className="lightblue"></div>
-                <div className="purple"> </div>
+                  <input type="radio" name="theme" id="" /> 
+                  <input type="radio" name="theme" id="" /> 
+                  <input type="radio" name="theme" id="" />  
               </div>
             </div>
 
