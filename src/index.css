@@ -8,6 +8,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background: rgba(30, 33, 63, 1);
 }
 img, picture, video, canvas, svg {
   display: block;
