@@ -18,7 +18,7 @@ export default function Dialog() {
 
   return (
     <>
-      <button onClick={() => handleClick()}> <img src="./dialog.png" /></button>
+      <button className="dialogbtn" onClick={() => handleClick()}> <img src="./dialog.png" /></button>
       <dialog ref={(e) => (dialogRef.current = e)}>
         <div className="dialogContainer">
           <div className="dialogHeader">

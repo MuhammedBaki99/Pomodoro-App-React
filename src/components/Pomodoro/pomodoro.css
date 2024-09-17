@@ -1,0 +1,106 @@
+.pomodoroContainer {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.69px;
+    text-align: center;
+    color: rgba(215, 224, 255, 1);
+    margin-block: 48px;
+  }
+}
+
+.buttonList {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+  background: rgba(22, 25, 50, 1);
+  padding: 7px;
+  z-index: 99;
+
+  button {
+    width: 120px;
+    padding-block: 17px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.36px;
+    text-align: center;
+    border-radius: 50px;
+    color: rgba(215, 224, 255, 1);
+  }
+
+  button:nth-child(1) {
+    background: rgba(248, 112, 112, 1);
+    color: rgba(30, 33, 63, 1);
+  }
+}
+
+
+.pomodoro {
+  width: 410px;
+  height: 410px;
+  border-radius: 205px;
+  background: linear-gradient(315deg, #2E325A 0%, #0E112A 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 45px;
+  box-shadow: 50px 50px 100px 0px rgba(18, 21, 48, 1);
+  box-shadow: -50px -50px 100px 0px rgba(39, 44, 90, 1);
+
+  .timeCount {
+    width: 366px;
+    height: 366px;
+    border-radius: 188px;
+    background: rgba(248, 112, 112, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: timer linear 16s;
+
+    .timeText {
+      width: 350px;
+      height: 350px;
+      border-radius: 175px;
+      background: rgba(22, 25, 50, 1);
+      text-align: center; 
+      padding-top: 100px;
+
+      h1 {
+        display: grid;
+        align-items: flex-end;
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 124.02px;
+        letter-spacing: -5px;
+        text-align: center;
+        margin: 0;
+      }
+
+      button {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.84px;
+        letter-spacing: 15px;
+        text-align: center;
+        color: rgba(215, 224, 255, 1);
+
+      }
+    }
+  }
+}
+
+@keyframes timer {
+  0% {
+    background: rgba(248, 112, 112, 1);
+    background-size: 100%;
+  }
+
+  100% {
+    background: transparent;
+    background-size: 0%;
+  }
+}
