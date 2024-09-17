@@ -4,7 +4,7 @@ import { FontContext } from "../../App";
 import "./dialog.css"
 
 export default function Dialog() {
-  const {setFont, setTheme} = useContext(FontContext);
+  const { settings, setSettings } = useContext(FontContext);
   const dialogRef = useRef({});
 
   function handleClick() {
@@ -44,7 +44,7 @@ export default function Dialog() {
               <div className="timeinputs">
                 <div className="inputCol">
                   <p>pomodoro</p>
-                  <input type="number" value={25} />
+                  <input type="text"  onChange={(e) => setSettings({ ...settings, pomodoro: e.target.value })} />
                 </div>
                 <div className="inputCol">
                   <p>short break</p>
@@ -59,10 +59,10 @@ export default function Dialog() {
             <hr />
             <div className="font">
               <h2>FONT</h2>
-              <div className="fontcheck"> 
-                  <input type="radio" name="font" id="" /> 
-                  <input type="radio" name="font" id="" /> 
-                  <input type="radio" name="font" id="" />  
+              <div className="fontcheck">
+                <input type="radio" name="font" onClick={() => setSettings({ ...settings, font: "khumb-sans" })} />
+                <input type="radio" name="font" onClick={() => setSettings({ ...settings, font: "roboto" })} />
+                <input type="radio" name="font" onClick={() => setSettings({ ...settings, font: "space mono"})} />
               </div>
             </div>
             <hr />
@@ -71,15 +71,15 @@ export default function Dialog() {
             <div className="color">
               <h2>COLOR</h2>
               <div className="colorchoices">
-                  <input type="radio" name="theme" id="" /> 
-                  <input type="radio" name="theme" id="" /> 
-                  <input type="radio" name="theme" id="" />  
+                <input type="radio" name="theme"  onClick={() => setSettings({ ...settings, theme: "#F87070" })}/>
+                <input type="radio" name="theme"  onClick={() => setSettings({ ...settings, theme: "#70F3F8" })}/>
+                <input type="radio" name="theme"  onClick={() => setSettings({ ...settings, theme: "#D881F8" })}/>
               </div>
             </div>
 
           </div>
 
-          <button className="apply">Uygula</button>
+          <button className="apply" >Uygula</button>
         </div>
       </dialog>
 
