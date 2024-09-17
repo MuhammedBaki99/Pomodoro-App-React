@@ -1,10 +1,12 @@
 import './App.css'
 import Dialog from './components/Dialog'
+import Pomodoro from './components/Pomodoro'
 
 function App() {
 
   return (
     <>
+    <Pomodoro />
     <Dialog />
     </>
   )
