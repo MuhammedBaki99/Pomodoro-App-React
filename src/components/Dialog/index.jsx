@@ -1,7 +1,8 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import "./dialog.css"
 
 export default function Dialog() {
+  const {font, setFont} = useContext(FontContext);
   const dialogRef = useRef({});
 
   function handleClick() {
@@ -57,9 +58,9 @@ export default function Dialog() {
             <div className="font">
               <h2>FONT</h2>
               <div className="fontcheck">
-                <button>Aa</button>
-                <button>Aa</button>
-                <button>Aa</button>
+                <button onClick={() => setFont("Khumb Sans")}>Aa</button>
+                <button onClick={() => setFont("Roboto")}>Aa</button>
+                <button onClick={() => setFont("Space Mono")}>Aa</button>
               </div>
             </div>
             <hr />

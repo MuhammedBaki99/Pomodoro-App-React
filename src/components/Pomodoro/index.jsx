@@ -1,7 +1,7 @@
 import "./pomodoro.css"
 
 export default function Pomodoro() {
- 
+
   return (
     <div className="pomodoroContainer">
       <h1>pomodoro</h1>
