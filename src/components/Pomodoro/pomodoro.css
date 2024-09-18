@@ -32,12 +32,11 @@
     color: rgba(215, 224, 255, 1);
   }
 
-  button:nth-child(1) { 
+  button:nth-child(1) {
     color: rgba(30, 33, 63, 1);
   }
 }
-
-
+ 
 .pomodoro {
   width: 410px;
   height: 410px;
