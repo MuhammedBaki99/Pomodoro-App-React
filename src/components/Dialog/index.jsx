@@ -67,7 +67,6 @@ export default function Dialog() {
             </div>
             <hr />
 
-
             <div className="color">
               <h2>COLOR</h2>
               <div className="colorchoices">

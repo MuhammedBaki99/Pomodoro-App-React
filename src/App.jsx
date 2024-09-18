@@ -10,9 +10,9 @@ function App() {
   const [settings, setSettings] = useState([]);
   const [font, setFont] = useState("Kumbh Sans");
   const [theme, setTheme] = useState("rgba(248, 112, 112, 1)");
-  const [pomodoro, setPomodoro] = useState(0);
-  const [longbreak, setLongbreak] = useState(0);
-  const [shortbreak, setShortbreak] = useState(0);
+  const [pomodoro, setPomodoro] = useState(25);
+  const [longbreak, setLongbreak] = useState(10);
+  const [shortbreak, setShortbreak] = useState(5);
 
   useEffect(() => {
     console.log(settings);

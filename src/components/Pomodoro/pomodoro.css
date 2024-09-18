@@ -36,7 +36,7 @@
     color: rgba(30, 33, 63, 1);
   }
 }
- 
+
 .pomodoro {
   width: 410px;
   height: 410px;
@@ -53,11 +53,9 @@
     width: 366px;
     height: 366px;
     border-radius: 188px;
-    background: rgba(248, 112, 112, 1);
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: timer linear 16s;
 
     .timeText {
       width: 350px;
@@ -89,4 +87,4 @@
       }
     }
   }
-}
+} 
